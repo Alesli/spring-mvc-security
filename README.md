@@ -39,4 +39,4 @@ Necessary Tools:
 13. User (sender and recipient) must be authorized and have "STANDARD" permission.
 
 14. Use docker containers to implement solution.
-Run MySQL container in Docker: `docker run --name web-project-mysql -e MYSQL*ROOT_PASSWORD=root -e MYSQL_DATABASE=usersdb -p 3307:3306 -d mysql:latest`
+Run MySQL container in Docker: `docker run --name web-project-mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=usersdb -p 3307:3306 -d mysql:latest`

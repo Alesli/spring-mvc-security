@@ -31,7 +31,7 @@ public class CustomUserDetailServiceImpl implements UserDetailsService {
 
         String[] authorities = user.getUserAuthorities().split(";");
 
-        return User.withUsername(user.getUserName()).password(user.getUserPassword()).roles("USER").build();
+        return User.withUsername(user.getUserName()).password(user.getUserPassword()).authorities(authorities).build();
     }
 }
 
